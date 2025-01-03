@@ -1,4 +1,3 @@
-
 #write a function that will run in the shiny app
 calc_hosp = function(data){
   data %>%
