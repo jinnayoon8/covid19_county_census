@@ -1,0 +1,26 @@
+## Author
+
+- **Name:** Jinna Yoon
+- **Email:** jyoon83@illinois.edu
+
+## Purpose
+The purpose of this application is to show how COVID-19 hospital admissions related to the number of COVID-19 cases on a county-by-county basis. It does this by effectively filtering the data by state, then the counties in that state, then the following health service areas that belong in that selected county. With the checkbox, the table will filter itself by the selected county. With these inputs, a user can select the specific location of their choice and easily browse through other locations' COVID-19 rates without having to worry about any invalid inputs. With this application, brief insight on the relationship between COVID-19 hospital admissions and total COVID-19 cases can be explored with the provided scatterplot, with indications of COVID-19 severity included as well. 
+
+## Data
+
+The data comes from the "United States COVID-19 Community Levels by County" dataset provided by the CDC (Centers for Disease Control and Prevention). This dataset updates the new COVID-19 admissions (per 100k) every week (for the past 7 days) from February 24, 2022 to May 11th, 2023. It was discontinued due to a decrease in cumulative case counts/rates across the country. The dataset is no longer updated. Each observation is a county. It contains the following: 
+  - county: the US county name in which the health service area is located
+  - state: the US state name in which the health service area is located
+  - county_population: the number of people residing in the county
+  - health_service_area_number: health service area identifier
+  - health_service_area: health service area name
+  - health_service_area_population: health service area population
+  - covid_inpatient_bed_utilization: percent of staffed inpatient beds occupied by COVID-19 patients (average among the 7-days)
+  - Covid19 Hospital Admissions (per 100k): the new COVID-19 hospital admissions per 100k population (total in 7-days)
+  - Covid Cases (per 100k): new COVID-19 cases per 100k population (total in 7-days)
+  - Covid19 Level: ratings of low, medium, or high that describe how severe COVID-19 is in each health service area
+  - Percent_Hospitalized_With_Covid: takes the # of Covid19 Hospital Admissions (per 100k) and divides it by the total # of Covid Cases (per 100k) to show the percentage of hospitalized COVID-19 cases
+
+## References
+
+- [CDC: United States COVID-19 Community Levels by County][https://data.cdc.gov/Public-Health-Surveillance/United-States-COVID-19-Community-Levels-by-County/3nnm-4jni/about_data]
